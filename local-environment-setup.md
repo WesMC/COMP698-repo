@@ -27,3 +27,9 @@ setup a github account. Google `github.com` and follow the steps to setup that.
 Docker, according from their own website:
 
 >Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
+
+This is our software for virtualization. Luckily for us Fedora users, it can be installed very similarly though:
+
+`sudo dnf install docker`
+
+Once installed, you want to run the command `sudo docker run hello-world` to confirm that you have it installed and running correctly. After you have that confirmed, you want to run the command `sudo docker run -it ubuntu:xenial /bin/bash` to setup the container we're going to use.
